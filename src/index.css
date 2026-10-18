@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrollbar for side panel lists */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+/* Leaflet popup polish */
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.leaflet-popup-content {
+  margin: 8px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.leaflet-container {
+  font-family: inherit;
+}
+.leaflet-bar a {
+  border-radius: 6px !important;
+}
+
+/* Smooth transition on all interactive elements */
+button, input, select {
+  transition-property: background-color, border-color, color, box-shadow, opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
